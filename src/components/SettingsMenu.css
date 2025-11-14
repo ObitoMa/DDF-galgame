@@ -1,0 +1,120 @@
+.settings-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.settings-menu {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border: 2px solid #FFD700;
+  border-radius: 15px;
+  padding: 30px;
+  min-width: 400px;
+  max-width: 600px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #FFD700;
+  padding-bottom: 15px;
+}
+
+.settings-header h2 {
+  color: #FFD700;
+  margin: 0;
+  font-size: 1.8em;
+}
+
+.close-btn {
+  background: transparent;
+  border: 2px solid #FFD700;
+  color: #FFD700;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn:hover {
+  background: #FFD700;
+  color: #000;
+}
+
+.settings-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.setting-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.setting-item label {
+  color: #fff;
+  font-size: 1.1em;
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.setting-item input[type="range"] {
+  flex: 1;
+  height: 8px;
+  background: rgba(255, 215, 0, 0.3);
+  border-radius: 5px;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.setting-item input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #FFD700;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.setting-item input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #FFD700;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.setting-item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.setting-item span {
+  color: #FFD700;
+  min-width: 60px;
+  text-align: right;
+  font-weight: bold;
+}
+

@@ -1,0 +1,50 @@
+.choice-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.85));
+  padding: 30px 40px;
+  border-top: 3px solid #FFD700;
+  z-index: 10;
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.choice-prompt {
+  font-size: 1.3em;
+  color: #FFD700;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.choice-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.choice-button {
+  padding: 18px 25px;
+  font-size: 1.1em;
+  background: rgba(255, 215, 0, 0.2);
+  color: #fff;
+  border: 2px solid #FFD700;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: left;
+  font-family: 'Microsoft YaHei', 'SimHei', sans-serif;
+}
+
+.choice-button:hover {
+  background: rgba(255, 215, 0, 0.4);
+  transform: translateX(10px);
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+}
+
+.choice-button:active {
+  transform: translateX(5px);
+}
+

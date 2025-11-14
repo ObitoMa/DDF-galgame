@@ -1,0 +1,150 @@
+.save-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.save-menu {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border: 2px solid #FFD700;
+  border-radius: 15px;
+  padding: 30px;
+  min-width: 500px;
+  max-width: 700px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.save-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #FFD700;
+  padding-bottom: 15px;
+}
+
+.save-tabs {
+  display: flex;
+  gap: 10px;
+}
+
+.save-tabs button {
+  padding: 10px 20px;
+  background: transparent;
+  border: 2px solid #FFD700;
+  color: #FFD700;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.3s;
+}
+
+.save-tabs button.active {
+  background: #FFD700;
+  color: #000;
+  font-weight: bold;
+}
+
+.save-tabs button:hover:not(.active) {
+  background: rgba(255, 215, 0, 0.2);
+}
+
+.close-btn {
+  background: transparent;
+  border: 2px solid #FFD700;
+  color: #FFD700;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn:hover {
+  background: #FFD700;
+  color: #000;
+}
+
+.save-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.save-slot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border: 2px solid #FFD700;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: rgba(255, 215, 0, 0.1);
+}
+
+.save-slot.has-save {
+  background: rgba(255, 215, 0, 0.2);
+}
+
+.save-slot.empty {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 215, 0, 0.5);
+}
+
+.save-slot:hover {
+  background: rgba(255, 215, 0, 0.3);
+  transform: translateX(5px);
+}
+
+.save-slot-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.save-slot-number {
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.save-slot-time {
+  color: #ccc;
+  font-size: 0.9em;
+}
+
+.save-slot-empty {
+  color: #888;
+  font-size: 0.9em;
+}
+
+.delete-btn {
+  padding: 8px 15px;
+  background: rgba(231, 76, 60, 0.3);
+  border: 2px solid #E74C3C;
+  color: #E74C3C;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: all 0.3s;
+}
+
+.delete-btn:hover {
+  background: #E74C3C;
+  color: #fff;
+}
+
